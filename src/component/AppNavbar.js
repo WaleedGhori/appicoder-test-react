@@ -1,11 +1,18 @@
 import styles from "../style/AppNavbar.module.css";
+import heroImage from "../assets/images/appicodeLogo.png"
 
 const AppNavbar = () => {
   return (
     <>
       <div className={styles.container}>
         <div style={{ color: "white", fontSize: "1.5rem", fontWeight: "bold" }}>
-          Waleed
+           <img 
+            src={heroImage} 
+            alt="Appicoders" 
+            className={styles.image}
+            height={50}
+            width={200}
+          />
         </div>
         <ul>
           <li>Home</li>
