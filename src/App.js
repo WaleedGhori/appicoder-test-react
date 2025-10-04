@@ -9,6 +9,9 @@ import "./assets/scss/themes.scss";
 import Footer from "./component/Footer";
 import AppNavbar from "./component/AppNavbar";
 import Hero from "./pages/Hero";
+import Info from "./pages/Info";
+import Services from "./pages/Services";
+import CaseStudy from "./pages/CaseStudy";
 
 class App extends Component {
   render() {
@@ -16,6 +19,9 @@ class App extends Component {
       <React.Fragment>
         <AppNavbar/>
         <Hero/>
+        <Info/>
+        <Services/>
+        <CaseStudy/>
         <Routes>
           {routes.map((route, idx) => (
             <Route path={route.path} element={route.component} key={idx} />

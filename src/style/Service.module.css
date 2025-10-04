@@ -1,0 +1,116 @@
+.serviceOut {
+  position: relative;
+  min-height: 100vh;
+  background: url("../assets/images/serviceout.svg") no-repeat center top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.serviceIn {
+  position: relative;
+  min-height: 95vh;
+  background: url("../assets/images/servicein.svg") no-repeat center top;
+  background-size: cover;
+  display: flex;
+  align-items: stretch; 
+  width: 100%;
+  margin-top: 2rem !important; 
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  margin: 0 auto;
+  gap: 2rem; 
+}
+
+.serviceImage {
+  width: 50%;
+  position:  relative;
+  bottom: 133px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+
+
+.serviceContent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  color: white;
+}
+
+.serviceTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: -1rem;
+  margin-left: 6rem
+}
+
+.serviceText {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  margin-left: 6rem
+}
+
+@media (max-width: 768px) {
+  .contentContainer {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .serviceImage,
+  .serviceContent {
+    width: 100%;
+  }
+
+  .serviceContent {
+    padding: 1rem;
+  }
+}
+
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem 2rem;
+  margin-left: 6rem
+}
+
+.serviceItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.serviceIcon {
+  width: 60;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.itemTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
+}
+
+.itemDesc {
+  font-size: 0.9rem;
+  color: white;
+  margin: 0.2rem 0 0 0;
+}
