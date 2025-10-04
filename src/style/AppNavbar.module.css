@@ -1,37 +1,45 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+
 .container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: transparent;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
   width: 100%;
+  z-index: 1000;
   box-sizing: border-box;
 }
 
-.container ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-  gap: 2rem;
+
+.logo img {
+  height: 50px;
+  width: 200px;
+  object-fit: contain;
 }
 
-.container li {
+.navList {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navList li {
   color: white;
   cursor: pointer;
-  font-family: Arial, sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   transition: color 0.3s ease;
 }
 
-.container li:hover {
+.navList li:hover {
   color: #f0f0f0;
 }
 
@@ -39,16 +47,108 @@
   background-color: transparent;
   color: white;
   border: 2px solid white;
-  padding: 0.75rem 1rem;
+  padding: 0.6rem 1rem;
   border-radius: 16px;
   cursor: pointer;
-  font-family: Arial, sans-serif;
-  font-size: 0.9rem;
   transition: all 0.3s ease;
-  margin-left: 1rem;
+  font-size: 0.9rem;
 }
 
 .phoneButton:hover {
   background-color: white;
   color: black;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+  color: white;
+  font-size: 1.8rem;
+  z-index: 2000;
+  transition: transform 0.3s ease;
+}
+
+.hamburger:hover {
+  transform: scale(1.1);
+}
+
+
+.mobileMenu {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.95);
+  padding: 2rem 2rem;
+  z-index: 999;
+  animation: slideDown 0.3s ease forwards;
+}
+
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobileMenu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.mobileMenu li {
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.mobileMenu li:hover {
+  color: #ff4d4d;
+}
+
+
+.mobileMenu .phoneButton {
+  width: 100%;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 992px) {
+  .navList {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .phoneButton {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .mobileMenu {
+    padding: 1.5rem;
+  }
+
+  .mobileMenu li {
+    font-size: 0.95rem;
+  }
 }

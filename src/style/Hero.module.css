@@ -10,7 +10,7 @@
   padding: 2rem;
 }
 
-.hero1{
+.hero1 {
   background-color: #20222d !important;
   min-height: 85vh;
 }
@@ -23,7 +23,6 @@
   align-items: center;
   gap: 4rem;
 }
-
 
 .heroImage {
   flex: 0 0 30%;
@@ -43,7 +42,6 @@
 .image:hover {
   transform: translateY(-5px);
 }
-
 
 .heroContent {
   flex: 0 0 70%;
@@ -90,7 +88,6 @@
   font-family: sans-serif;
 }
 
-
 .quoteBtn:hover {
   background: linear-gradient(to bottom, #d10000 0%, #6a0000 100%);
 }
@@ -101,45 +98,69 @@
 }
 
 
+@media (max-width: 1024px) {
+  .heroContainer {
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroText {
+    font-size: 1rem;
+  }
+
+  .image {
+    height: 400px;
+  }
+}
+
+
 @media (max-width: 768px) {
   .heroContainer {
     flex-direction: column;
     gap: 2rem;
     text-align: center;
+    margin-top: 8rem;
   }
-  
+
   .heroImage, .heroContent {
     flex: 0 0 100%;
+    padding-top: 0;
   }
-  
+
   .heroTitle {
     font-size: 2.2rem;
   }
-  
+
   .heroText {
     max-width: 100%;
   }
-  
+
   .image {
     height: 300px;
   }
 }
 
+
 @media (max-width: 480px) {
   .hero {
     padding: 1rem;
   }
-  
+
   .heroTitle {
     font-size: 1.8rem;
+    line-height: 1.3;
   }
-  
+
   .heroText {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
-  
+
   .quoteBtn {
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
+    padding: 0.7rem 2rem;
+    font-size: 0.9rem;
   }
 }

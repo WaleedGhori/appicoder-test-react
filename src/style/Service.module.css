@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   z-index: 1;
+  width: 100%;
 }
 
 .serviceIn {
@@ -30,7 +31,7 @@
 
 .serviceImage {
   width: 50%;
-  position:  relative;
+  position: relative;
   bottom: 133px;
 }
 
@@ -42,7 +43,6 @@
   padding: 0;
   z-index: 10;
 }
-
 
 .serviceContent {
   width: 50%;
@@ -56,38 +56,21 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: -1rem;
-  margin-left: 6rem
+  margin-left: 6rem;
 }
 
 .serviceText {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 2rem;
-  margin-left: 6rem
+  margin-left: 6rem;
 }
-
-@media (max-width: 768px) {
-  .contentContainer {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-
-  .serviceImage,
-  .serviceContent {
-    width: 100%;
-  }
-
-  .serviceContent {
-    padding: 1rem;
-  }
-}
-
 
 .servicesGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem 2rem;
-  margin-left: 6rem
+  margin-left: 6rem;
 }
 
 .serviceItem {
@@ -97,7 +80,7 @@
 }
 
 .serviceIcon {
-  width: 60;
+  width: 60px;
   height: 60px;
   flex-shrink: 0;
 }
@@ -113,4 +96,84 @@
   font-size: 0.9rem;
   color: white;
   margin: 0.2rem 0 0 0;
+}
+
+@media (max-width: 1024px) {
+  .serviceTitle,
+  .serviceText,
+  .servicesGrid {
+    margin-left: 3rem;
+  }
+
+  .serviceTitle {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .serviceImage,
+  .serviceContent {
+    width: 100%;
+  }
+
+  .serviceImage {
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .serviceImage .image {
+    width: 70%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .serviceContent {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .serviceTitle,
+  .serviceText,
+  .servicesGrid {
+    margin-left: 0;
+  }
+
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .serviceTitle {
+    font-size: 1.8rem;
+  }
+
+  .serviceText {
+    font-size: 1rem;
+  }
+
+  .itemTitle {
+    font-size: 1rem;
+  }
+
+  .itemDesc {
+    font-size: 0.85rem;
+  }
+
+  .serviceImage .image {
+    width: 85%;
+    max-width: 280px;
+  }
 }
