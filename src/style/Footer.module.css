@@ -1,0 +1,152 @@
+.container {
+  background-color: #262834;
+  color: white;
+  font-family: "Outfit", sans-serif;
+}
+
+.container > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+  gap: 40px;
+}
+
+
+.contactColumn {
+  flex: 1;
+  min-width: 250px;
+}
+
+.logoSection {
+  margin-bottom: 15px;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.contactTitle {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.contactDetail {
+  margin: 3px 0;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.socialLinks {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.socialIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #3a3d4a;
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.socialIcon:hover {
+  background-color: #e01923;
+  transform: translateY(-2px);
+}
+
+
+.aboutColumn,
+.servicesColumn {
+  flex: 1;
+  min-width: 200px;
+}
+
+.columnTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.columnTitle::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #e01923;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0;
+}
+
+.linkList li {
+  margin-bottom: 8px;
+}
+
+.linkList a {
+  color: #ccc;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.linkList a:hover {
+  color: #e01923;
+}
+
+
+.copyrightBar {
+  background-color: #1f202a;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  border-top: 1px solid #333;
+  margin-top: 40px;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.copyrightBar p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 20px 0;
+  }
+
+  .container > div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .columnTitle::after {
+    width: 30px;
+  }
+
+  .socialLinks {
+    gap: 8px;
+  }
+}
+
+.innerContainer{
+    margin-left: 70px;
+    margin-right: 50px;
+    padding-top: 40px;
+}

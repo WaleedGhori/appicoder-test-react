@@ -12,6 +12,7 @@ import Hero from "./pages/Hero";
 import Info from "./pages/Info";
 import Services from "./pages/Services";
 import CaseStudy from "./pages/CaseStudy";
+import Contact from "./pages/Contact";
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
         <Info/>
         <Services/>
         <CaseStudy/>
+        <Contact/>
         <Routes>
           {routes.map((route, idx) => (
             <Route path={route.path} element={route.component} key={idx} />

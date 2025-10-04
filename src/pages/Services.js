@@ -21,7 +21,6 @@ const Services = () => {
     <div className={styles.serviceOut}>
       <div className={styles.serviceIn}>
         <div className={styles.contentContainer}>
-          {/* Left Content */}
           <div className={styles.serviceContent}>
             <h2 className={styles.serviceTitle}>Our Services</h2>
             <p className={styles.serviceText}>
