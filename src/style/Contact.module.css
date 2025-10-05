@@ -1,177 +1,241 @@
 .container {
-    display: flex;
-    max-width: 1000px;
-    margin: 40px auto;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
-    overflow: hidden;
-    font-family: Arial, sans-serif;
+  display: flex;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  font-family: Arial, sans-serif;
 }
 
 .formSection {
-    flex: 1;
-    padding: 40px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
+  flex: 0 0 65%;
+  padding: 60px 40px;
+  background-color: #e01923;
+  display: flex;
+  flex-direction: column;
 }
 
 .letstalk {
-    color: #d81b22;
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .heading {
-    color: #333;
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin: 5px 0 10px 0;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 5px 0 10px 0;
 }
 
 .subtext {
-    color: #666;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin: 0;
+  color: white;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
 }
 
 .contactForm {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
 }
 
 .inputField {
-    width: 100%;
-    padding: 12px 15px;
-    border: none;
-    background-color: white;
-    box-shadow: 0 0 0 1px #ccc inset;
-    border-radius: 0;
-    font-size: 1rem;
-    color: #333;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px;
+  background-color: white;
+  box-shadow: 0 0 0 1px #ccc inset;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+  box-sizing: border-box;
+  font-size: 12px;
 }
 
 .inputField:focus {
-    box-shadow: 0 0 0 2px #d81b22 inset;
-    outline: none;
+  box-shadow: 0 0 0 2px #d81b22 inset;
+  outline: none;
 }
 
 .messageField {
-    resize: vertical;
-    min-height: 150px;
+  resize: vertical;
+  min-height: 150px;
 }
 
 .submitButton {
-    background: linear-gradient(to right, #d81b22, #a3151a);
-    color: white;
-    border: none;
-    padding: 15px;
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background 0.3s ease;
-    margin-top: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #b70000 0%, #5a0000 100%);
+  color: #fff;
+  border: 1px solid #7a0000;
+  padding: 0.8rem 4rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    0 2px 4px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
 }
 
 .submitButton:hover {
-    background: linear-gradient(to right, #a3151a, #7a1013);
-}
-
-.infoSection {
-    flex: 1;
-    background-color: #252a32;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    display: flex;
-    align-items: flex-end;
+  background: linear-gradient(to right, #a3151a, #7a1013);
 }
 
 .imageOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.55);
-    padding: 40px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    text-align: right;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
 }
 
 .infoText {
-    font-size: 0.95rem;
-    margin-bottom: 20px;
-    line-height: 1.5;
-    max-width: 85%;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  max-width: 85%;
 }
 
 .contactDetails {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .phoneIcon {
-    font-size: 1.8rem;
-    margin-bottom: 5px;
-    color: white;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  color: white;
 }
 
 .phoneNumber {
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin: 5px 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 5px 0;
 }
 
 .emailAddress {
-    font-size: 0.9rem;
-    font-weight: 300;
-    margin: 5px 0 0 0;
-    color: #ccc;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 5px 0 0 0;
+  color: #ccc;
 }
 
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        max-width: 100%;
-        margin: 0;
-    }
+  .container {
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0;
+  }
 
-    .formSection {
-        padding: 30px 20px;
-    }
+  .formSection {
+    padding: 30px 20px;
+  }
 
-    .infoSection {
-        min-height: 250px;
-    }
+  .infoSection {
+    min-height: 250px;
+  }
 
-    .imageOverlay {
-        padding: 20px;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-    }
-    
-    .infoText {
-        max-width: 100%;
-    }
+  .imageOverlay {
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
 
-    .contactDetails {
-        align-items: center;
-    }
+  .infoText {
+    max-width: 100%;
+  }
+
+  .contactDetails {
+    align-items: center;
+  }
+}
+
+.formSectionInner {
+  width: 80%;
+  margin: auto;
+}
+
+.infoSection {
+  flex: 0 0 35%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #262834;
+  overflow: hidden;
+}
+
+.infoSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-image: url("../assets/images/contactside.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.imageOverlay {
+  position: relative;
+  z-index: 2;
+  background-color: #262834;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40%; 
+  width: 70%;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  gap: 8px; 
+  margin-top: 10px;
+}
+
+.phoneIcon img {
+  width: 35px;
+  height: 35px;
+}
+
+.phoneNumber {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 5px 0 0 0;
+  text-align: center;
+}
+
+.emailAddress {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 3px 0 0 0;
+  color: #ccc;
+  text-align: center;
 }

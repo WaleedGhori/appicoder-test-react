@@ -1,13 +1,11 @@
 import React from 'react';
 import styles from '../style/Contact.module.css';
-import imageUrl from '../assets/images/contactside.png'
+import phone from '../assets/images/phone.png'
 const Contact = () => {
-    // Set your image path here:
- 
-
     return (
         <div className={styles.container}>
             <div className={styles.formSection}>
+                <div className={styles.formSectionInner}>
                 <div className={styles.formHeader}>
                     <p className={styles.letstalk}>LET'S TALK</p>
                     <h1 className={styles.heading}>Got an idea? Let's get in touch!</h1>
@@ -25,15 +23,18 @@ const Contact = () => {
                         LET'S GET IN TOUCH
                     </button>
                 </form>
+                </div>
             </div>
             
-            <div className={styles.infoSection} style={{ backgroundImage: `url(${imageUrl})` }}>
+            <div className={styles.infoSection}>
                 <div className={styles.imageOverlay}>
                     <p className={styles.infoText}>
                         Please submit your inquiry and our App Development Strategist will contact you shortly
                     </p>
                     <div className={styles.contactDetails}>
-                        <div className={styles.phoneIcon}>📞</div> 
+                        <div className={styles.phoneIcon}>
+                            <img src={phone} alt='phone'/>    
+                        </div> 
                         <p className={styles.phoneNumber}>+1-(800) 826 8018</p>
                         <p className={styles.emailAddress}>info@appicoders.com</p>
                     </div>

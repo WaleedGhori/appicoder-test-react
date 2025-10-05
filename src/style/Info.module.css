@@ -74,7 +74,7 @@
   transform: translateY(1px);
 }
 
-/* ✅ Responsive Design */
+
 @media (max-width: 1024px) {
   .main_heading {
     font-size: 2rem;
